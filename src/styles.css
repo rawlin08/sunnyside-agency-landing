@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+/* BOILERPLATE */
+:root {
+    --soft-red: #FE7261;
+    --yellow: #FED500;
+    --light-blue: #3CBFFF;
+    --dark-cyan: #2D7265;
+    --cyan: #8FD4C5;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+html {
+    font-family: 'Barlow', 'Fraunces', sans-serif;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--black);
+    background-color: var(--light-blue);
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    border-bottom: 2px solid var(--mint);
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+    font-family: inherit;
+    transition: all .2s ease-in-out;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* COMPONENTS */
+app-home {
+    display: block;
+}
+app-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--white);
+}
+app-bottom-images {
+    display: flex;
+}
+app-testimonials {
+    display: block;
+    padding: 100px;
+    background-color: var(--white);
+}
+app-footer {
+    display: block;
+    background-color: var(--dark-cyan);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media (min-width: 1281px) {
+    app-main-slides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
