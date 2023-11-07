@@ -36,6 +36,14 @@ import { Component } from '@angular/core';
     gap: 40px;
     margin: 30px 0 60px 0;
   }
+
+  /* HOVER STYLES */
+  @media (hover: hover) {
+    a:hover {
+        color: var(--white);
+        transition: all .1s ease-in-out;
+    }
+}
   `]
 })
 export class FooterComponent {
