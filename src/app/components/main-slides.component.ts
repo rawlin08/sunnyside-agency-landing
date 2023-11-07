@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
     </picture>
     <div class="textInImg">
       <h2>Graphic Design</h2>
-      <p>Great design makes you memorable. We delievr artwork that underscores your brand message and captures potiential clients' attention.</p>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potiential clients' attention.</p>
     </div>
   </div>
   <div class="text">
@@ -89,6 +89,23 @@ import { Component } from '@angular/core';
   img {
     width: 100%;
     height: 100%;
+  }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    .noImg {
+      display: grid;
+      place-content: center;
+      text-align: left;
+      padding: 0 150px;
+    }
+    a {
+      width: 26%;
+      font-size: 20px;
+    }
+    .textInImg {
+      padding: 0 250px;
+    }
   }
   `]
 })
