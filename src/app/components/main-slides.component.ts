@@ -98,18 +98,35 @@ import { Component } from '@angular/core';
     height: 100%;
   }
 
-  /* DESKTOP STYLES */
-  @media (min-width: 1281px) {
+  /* TABLET STYLES */
+  @media (min-width: 768px) {
     .noImg {
       display: grid;
       place-content: center;
       text-align: left;
-      padding: 0 150px;
+      padding: 50px;
     }
     a {
       font-size: 20px;
     }
     .textInImg {
+      bottom: 40px;
+      padding: 0 35px;
+    }
+  }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    .noImg {
+      padding: 0 150px;
+    }
+    .textInImg {
+      padding: 0 125px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .textInImg {
+      bottom: 90px;
       padding: 0 250px;
     }
   }

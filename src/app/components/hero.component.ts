@@ -29,6 +29,13 @@ import { Component } from '@angular/core';
     height: 100%;
   }
 
+  /* TABLET STYLES */
+  @media (min-width: 768px) {
+    .arrow {
+      top: 125px;
+    }
+  }
+
   /* DESKTOP STYLES */
   @media (min-width: 1281px) {
     h2 {
