@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   <h2>WE ARE CREATIVES</h2>
   <svg class="arrow"><use href="#arrowIcon"></use></svg>
   <picture>
-    <source srcset="assets/images/desktop/image-header.jpg" media="(min-width: 1281px)" />
+    <source srcset="assets/images/desktop/image-header.jpg" media="(min-width: 751px)" />
     <img src="assets/images/mobile/image-header.jpg" alt="">
   </picture>
   `,
@@ -27,6 +27,17 @@ import { Component } from '@angular/core';
   img {
     width: 100%;
     height: 100%;
+  }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    h2 {
+      font-size: 60px;
+      letter-spacing: 10px;
+    }
+    .arrow {
+      top: 150px;
+    }
   }
   `]
 })
