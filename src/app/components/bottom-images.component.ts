@@ -17,10 +17,15 @@ import { Component } from '@angular/core';
   </picture>
   <picture>
     <source srcset="assets/images/desktop/image-gallery-sugarcubes.jpg" media="(min-width: 1281px)" />
-    <img src="assets/images/mobile/image-gallery-sugarcubes.jpg" alt="" />
+    <img src="assets/images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
   </picture>
   `,
-  styles: [``]
+  styles: [`
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  `]
 })
 export class BottomImagesComponent {
 
