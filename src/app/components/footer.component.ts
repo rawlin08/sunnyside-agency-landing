@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-  <h1>sunnyside</h1>
+  <svg class="logo"><use href="#companyLogoIcon"></use></svg>
   <div id="menu">
     <a href="">About</a>
     <a href="">Services</a>
@@ -28,6 +28,9 @@ import { Component } from '@angular/core';
   }
   .icon {
     width: 30px;
+    height: 30px;
+  }
+  .logo {
     height: 30px;
   }
   #menu {

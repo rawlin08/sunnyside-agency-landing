@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-heading',
   template: `
-  <h1>sunnyside</h1>
+  <svg class="icon"><use href="#companyLogoIcon"></use></svg>
   <!-- <div id="menu">
     <a href="">About</a>
     <a href="">Services</a>
@@ -22,6 +22,17 @@ import { Component } from '@angular/core';
     padding: 15px 30px;
     border-radius: 40px;
     color: var(--black);
+  }
+  .icon {
+    width: 155px;
+    height: 30px;
+  }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    .icon {
+      height: 60px;
+    }
   }
 
   /* HOVER STYLES */
