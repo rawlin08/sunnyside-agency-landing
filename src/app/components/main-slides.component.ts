@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   <div class="noImg">
     <h2>Transform your brand</h2>
     <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-    <a href="">LEARN MORE</a>
+    <a id="transformLink" href="">LEARN MORE</a>
   </div>
   <div>
     <picture>
@@ -23,7 +23,7 @@ import { Component } from '@angular/core';
   <div class="noImg">
     <h2>Stand out to the right audience</h2>
     <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
-    <a href="">LEARN MORE</a>
+    <a id="standoutLink" href="">LEARN MORE</a>
   </div>
   <div class="text">
     <picture>
@@ -78,6 +78,13 @@ import { Component } from '@angular/core';
   }
   a {
     font-family: 'Fraunces', sans-serif;
+    min-width: 0;
+  }
+  #transformLink {
+    border-bottom: 5px solid hsla(51, 100%, 49%, 0.3);
+  }
+  #standoutLink {
+    border-bottom: 5px solid hsla(7, 99%, 70%, 0.3);
   }
   .noImg > p {
     font-family: 'Barlow', sans-serif;
@@ -100,12 +107,22 @@ import { Component } from '@angular/core';
       padding: 0 150px;
     }
     a {
-      width: 26%;
       font-size: 20px;
     }
     .textInImg {
       padding: 0 250px;
     }
+  }
+
+  @media (hover: hover) {
+  #transformLink:hover {
+    border-bottom: 5px solid hsla(51, 100%, 49%, 1);
+    transition: all .1s ease-in-out;
+  }
+  #standoutLink:hover {
+    border-bottom: 5px solid hsla(7, 99%, 70%, 1);
+    transition: all .1s ease-in-out;
+  }
   }
   `]
 })
