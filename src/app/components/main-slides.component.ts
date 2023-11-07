@@ -124,7 +124,7 @@ import { Component } from '@angular/core';
       padding: 0 125px;
     }
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1600px) {
     .textInImg {
       bottom: 90px;
       padding: 0 250px;
