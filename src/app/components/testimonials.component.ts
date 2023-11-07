@@ -34,11 +34,14 @@ import { Component } from '@angular/core';
   styles: [`
   h3 {
     text-align: center;
-    margin: 0 0 70px 0;
+    margin: 0 0 50px 0;
+    color: var(--gray);
+    font-family: 'Fraunces', sans-serif;
+    letter-spacing: 6px;
   }
   .testimonials {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    gap: 50px;
   }
   .testimonial {
     display: flex;
@@ -54,11 +57,24 @@ import { Component } from '@angular/core';
   }
   .testimonial > p {
     text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
   }
   .testimonial > div {
     text-align: center;
     display: grid;
     gap: 10px;
+  }
+  .testimonial > div > p:first-child {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 20px;
+  }
+  .testimonial > div > p:last-child {
+    font-family: 'Barlow', sans-serif;
+    color: var(--gray);
+    font-size: 15px;
+    opacity: 0.7;
   }
   `]
 })
