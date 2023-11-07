@@ -78,9 +78,11 @@ import { Component } from '@angular/core';
   }
 
   /* DESKTOP STYLES */
-  .testimonials {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  @media (min-width: 1281px) {
+    .testimonials {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
   }
   `]
 })

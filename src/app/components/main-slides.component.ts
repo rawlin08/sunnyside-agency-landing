@@ -115,14 +115,14 @@ import { Component } from '@angular/core';
   }
 
   @media (hover: hover) {
-  #transformLink:hover {
-    border-bottom: 5px solid hsla(51, 100%, 49%, 1);
-    transition: all .1s ease-in-out;
-  }
-  #standoutLink:hover {
-    border-bottom: 5px solid hsla(7, 99%, 70%, 1);
-    transition: all .1s ease-in-out;
-  }
+    #transformLink:hover {
+      border-bottom: 5px solid hsla(51, 100%, 49%, 1);
+      transition: all .1s ease-in-out;
+    }
+    #standoutLink:hover {
+      border-bottom: 5px solid hsla(7, 99%, 70%, 1);
+      transition: all .1s ease-in-out;
+    }
   }
   `]
 })
