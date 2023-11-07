@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainSlidesComponent } from './components/main-slides.component';
 import { TestimonialsComponent } from './components/testimonials.component';
 import { BottomImagesComponent } from './components/bottom-images.component';
+import { HeroComponent } from './components/hero.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BottomImagesComponent } from './components/bottom-images.component';
     FooterComponent,
     MainSlidesComponent,
     TestimonialsComponent,
-    BottomImagesComponent
+    BottomImagesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
