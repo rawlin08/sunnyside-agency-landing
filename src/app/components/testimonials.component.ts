@@ -76,6 +76,12 @@ import { Component } from '@angular/core';
     font-size: 15px;
     opacity: 0.7;
   }
+
+  /* DESKTOP STYLES */
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
   `]
 })
 export class TestimonialsComponent {

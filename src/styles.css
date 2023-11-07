@@ -92,6 +92,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     app-main-slides > div:nth-child(3), app-main-slides > div:nth-child(4), app-main-slides > div:nth-child(5), app-main-slides > div:nth-child(6) {
         order: 2;
     }
+    app-testimonials {
+        padding: 100px 250px 100px 250px;
+    }
 }
 
 /* GLOBAL HOVER STYLES */
