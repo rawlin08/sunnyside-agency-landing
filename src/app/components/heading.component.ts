@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-heading',
   template: `
   <h1>sunnyside</h1>
-  <div id="menu">
+  <!-- <div id="menu">
     <a href="">About</a>
     <a href="">Services</a>
     <a href="">Projects</a>
     <a href="">CONTACT</a>
-  </div>
+  </div> -->
   `,
   styles: [`
   #menu {
@@ -22,6 +22,15 @@ import { Component } from '@angular/core';
     padding: 15px 30px;
     border-radius: 40px;
     color: var(--black);
+  }
+
+  /* HOVER STYLES */
+  @media (hover: hover) {
+    #menu > a:last-child:hover {
+        background-color: hsla(0, 0%, 100%, 0.4);
+        color: var(--white);
+        transition: all .2s ease-in-out;
+    }
   }
   `]
 })
