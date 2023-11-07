@@ -40,9 +40,6 @@ import { Component } from '@angular/core';
     width: 30px;
     height: 30px;
   }
-  .dropbtn {
-
-  }
   .dropdown {
     position: relative;
     display: inline-block;
@@ -62,7 +59,7 @@ import { Component } from '@angular/core';
     font-size: 20px;
   }
   .dropdown-content a {
-    color: black;
+    color: var(--black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
