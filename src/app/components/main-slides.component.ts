@@ -108,10 +108,16 @@ import { Component } from '@angular/core';
     }
     a {
       font-size: 20px;
+      justify-self: left;
     }
     .textInImg {
       bottom: 40px;
       padding: 0 35px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .textInImg {
+      bottom: 100px;
     }
   }
 
@@ -121,13 +127,14 @@ import { Component } from '@angular/core';
       padding: 0 150px;
     }
     .textInImg {
+      bottom: 40px;
       padding: 0 125px;
     }
   }
   @media (min-width: 1600px) {
     .textInImg {
       bottom: 90px;
-      padding: 0 250px;
+      padding: 0 240px;
     }
   }
 
