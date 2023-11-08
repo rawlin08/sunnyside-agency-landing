@@ -23,14 +23,6 @@ import { Component } from '@angular/core';
   styles: [`
   #menu {
     display: none;
-    align-items: center;
-    gap: 40px;
-  }
-  #menu > a:last-child {
-    background-color: var(--white);
-    padding: 15px 30px;
-    border-radius: 40px;
-    color: var(--black);
   }
   .icon {
     width: 155px;
@@ -82,6 +74,15 @@ import { Component } from '@angular/core';
   @media(min-width: 768px) {
     #menu {
       display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    #menu > a:last-child {
+      background-color: var(--white);
+      padding: 15px 30px;
+      border-radius: 40px;
+      color: var(--black);
+      font-family: 'Fraunces', sans-serif;
     }
     .dropdown {
       display: none;
