@@ -28,6 +28,9 @@ import { Component } from '@angular/core';
     width: 100%;
     height: 100%;
   }
+  picture {
+    display: grid;
+  }
 
   /* TABLET STYLES */
   @media (min-width: 768px) {
